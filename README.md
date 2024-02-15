@@ -359,16 +359,20 @@ c5ff2d88f679: Mounted from library/ubuntu
 latest: digest: sha256:6e49841ad9e720a7baedcd41f9b666fcd7b583151d0763fe78101bb8221b1d88 size: 1157
 ```
 ### Distroless images:
-
+```
+Distroless images only contains your applications and its runtime dependecies with very minimal OS libraries. They do not contains pakage managers, shells or any other programs that you would expect in standard linux distributions. Thay are very small and light weight images.
+```
 ### Docker Volumes:
 
 ### Docker Newtwork:
 
-#### 1. Bridge Network: Virtual Ethernet - Eth 0
 
+##### Docker 0:
+ If One container wants to commiunicate with another container or if container wants to communicate with Host machine, Using Bridge networking communication will be established.
+
+#### 1. Bridge Network: Virtual Ethernet - Eth 0
 ```
-1. If One container wants to commiunicate with another container or if container wants to communicate with Host machine, Using Bridge networking communication will be established.
-2. If Containers needs tobe isolated with each other
+If Containers needs to be isolated with each other
 ```
 #### 2. Host Network: 
 
@@ -376,3 +380,15 @@ latest: digest: sha256:6e49841ad9e720a7baedcd41f9b666fcd7b583151d0763fe78101bb82
 Container Shares same subnet as Host
 ```
 #### 3. Overlay Network:
+```
+If you have multiple host systems or while using docker swarm you use overlay n/w
+```
+
+#### 4. MacVLan network:
+```
+In MacVLan n/w your container appears as a vertual server rather than container
+
+### Interview Questions:
+
+https://youtu.be/I6ZBUEc4LrU?si=EjcZc0Lz53RErJs_
+
