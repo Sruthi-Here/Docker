@@ -358,5 +358,21 @@ b8088c305a52: Pushed
 c5ff2d88f679: Mounted from library/ubuntu
 latest: digest: sha256:6e49841ad9e720a7baedcd41f9b666fcd7b583151d0763fe78101bb8221b1d88 size: 1157
 ```
+### Distroless images:
 
-### You must be feeling like a champ already 
+### Docker Volumes:
+
+### Docker Newtwork:
+
+#### 1. Bridge Network: Virtual Ethernet - Eth 0
+
+```
+1. If One container wants to commiunicate with another container or if container wants to communicate with Host machine, Using Bridge networking communication will be established.
+2. If Containers needs tobe isolated with each other
+```
+#### 2. Host Network: 
+
+```
+Container Shares same subnet as Host
+```
+#### 3. Overlay Network:
